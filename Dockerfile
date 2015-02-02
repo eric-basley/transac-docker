@@ -7,14 +7,14 @@ RUN npm install -g grunt-cli bower \
 && npm cache clear
 
 WORKDIR /apps
-RUN git clone https://github.com/redpelicans/transac-redline.git \
-&& cd transac-redline \
+RUN git clone https://github.com/redpelicans/transacd.git \
+&& cd transacd \
 && npm install \
 && bower --force-latest --allow-root install \
 && grunt  serve:dist 
 
 EXPOSE 80
-WORKDIR /apps/transac-redline
+WORKDIR /apps/transacd
 CMD node backend/main
 
 
