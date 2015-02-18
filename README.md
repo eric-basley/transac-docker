@@ -22,7 +22,7 @@ To use it in foreground mode:
 To use it in background mode:
 
 ````
-  # docker run -d --restart=always --name transac --link transac:transac --link mongo:mongo -p 443:443 redpelicans/transac
+  # docker run -d --restart=always --name transac --link transac:transac --link mongo:mongo -p 8001:80 redpelicans/transac
 ````
 
 It only depends on a mongo container.
